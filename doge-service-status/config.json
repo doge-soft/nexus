@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "checker_name": "",
+      "method": "POST",
+      "health_api": "",
+      "restart_api": "",
+      "restart_command": ""
+    }
+  ],
+  "email_subs": [
+    "xiangrui@aiursoft.com"
+  ]
+}

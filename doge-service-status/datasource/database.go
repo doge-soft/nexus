@@ -2,6 +2,7 @@ package datasource
 
 import (
 	"doge-service-status/migrations"
+	"doge-service-status/seeds"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"log"
@@ -49,4 +50,6 @@ func ConnectDatabase(masterDSN string, slaveDSN string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	seeds.SeedDatabase()
 }
